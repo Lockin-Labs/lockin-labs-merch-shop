@@ -15,7 +15,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Premium gear for vibe coders who live in the flow state and code with passion.
+            Premium vibe coding gear from Lockin-Labs - for developers who live in the flow state.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -23,7 +23,7 @@ const Hero = () => {
               size="lg" 
               className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-3 text-lg"
             >
-              Shop Vibe Gear
+              Shop Lockin-Labs Gear
             </Button>
             <Button 
               variant="outline" 

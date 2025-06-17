@@ -15,10 +15,10 @@ const Header = ({ cartItems, onCartClick }: HeaderProps) => {
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg flex items-center justify-center">
-            <span className="text-gray-950 font-bold text-sm">VT</span>
+            <span className="text-gray-950 font-bold text-sm">LL</span>
           </div>
           <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-            Vibe Tribe Gear
+            Lockin-Labs
           </h1>
         </div>
         
