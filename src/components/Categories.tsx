@@ -5,25 +5,25 @@ import { Shirt, ShoppingBag, Tags } from 'lucide-react';
 const Categories = () => {
   const categories = [
     {
-      name: "Hoodies & Sweatshirts",
+      name: "Vibe Hoodies",
       icon: Shirt,
       count: "12 items",
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=300&fit=crop"
     },
     {
-      name: "T-Shirts & Tanks",
+      name: "Flow State Tees",
       icon: Shirt,
       count: "18 items", 
       image: "https://images.unsplash.com/photo-1583743814966-8936f37f8302?w=300&h=300&fit=crop"
     },
     {
-      name: "Accessories",
+      name: "Tribe Accessories",
       icon: ShoppingBag,
       count: "8 items",
       image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=300&fit=crop"
     },
     {
-      name: "Stickers & Pins",
+      name: "Vibe Stickers",
       icon: Tags,
       count: "15 items",
       image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=300&h=300&fit=crop"
@@ -35,11 +35,11 @@ const Categories = () => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Shop by Category
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              Shop by Vibe
             </span>
           </h2>
-          <p className="text-gray-400 text-lg">Find your perfect developer aesthetic</p>
+          <p className="text-gray-400 text-lg">Find your perfect vibe tribe aesthetic</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

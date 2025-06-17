@@ -14,11 +14,11 @@ const Header = ({ cartItems, onCartClick }: HeaderProps) => {
     <header className="fixed top-0 w-full bg-gray-950/95 backdrop-blur-md border-b border-cyan-500/20 z-50">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-lg flex items-center justify-center">
-            <span className="text-gray-950 font-bold text-sm">LL</span>
+          <div className="w-8 h-8 bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg flex items-center justify-center">
+            <span className="text-gray-950 font-bold text-sm">VT</span>
           </div>
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Lockin-Labs
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+            Vibe Tribe Gear
           </h1>
         </div>
         

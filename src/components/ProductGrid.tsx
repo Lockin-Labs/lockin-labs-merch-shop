@@ -15,50 +15,50 @@ const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
   const products = [
     {
       id: 4,
-      name: "Syntax Error Hoodie",
+      name: "Vibe or Die Hoodie",
       price: 52.99,
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
-      description: "Comfortable hoodie for those inevitable debugging sessions",
+      description: "For those who live and breathe the vibe",
       category: "Hoodies"
     },
     {
       id: 5,
-      name: "Git Commit Tee",
+      name: "Code & Vibes Tee",
       price: 22.99,
       image: "https://images.unsplash.com/photo-1583743814966-8936f37f8302?w=500&h=500&fit=crop",
-      description: "Show your version control pride",
+      description: "Perfect balance of style and comfort",
       category: "T-Shirts"
     },
     {
       id: 6,
-      name: "Stack Overflow Hero",
+      name: "Tribe Leader Tee",
       price: 26.99,
       image: "https://images.unsplash.com/photo-1583743814966-8936f37f8302?w=500&h=500&fit=crop",
-      description: "For the developers who save the day",
+      description: "Lead your squad with style",
       category: "T-Shirts"
     },
     {
       id: 7,
-      name: "Code Monkey Zip-up",
+      name: "Flow State Zip-up",
       price: 48.99,
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
-      description: "Lightweight zip-up for any coding environment",
+      description: "Stay warm while coding in the zone",
       category: "Hoodies"
     },
     {
       id: 8,
-      name: "Terminal Master Cap",
+      name: "Vibe Tribe Cap",
       price: 19.99,
       image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop",
-      description: "Classic snapback for command line enthusiasts",
+      description: "Rep the tribe wherever you go",
       category: "Accessories"
     },
     {
       id: 9,
-      name: "Localhost Sticker Pack",
+      name: "Vibe Sticker Pack",
       price: 12.99,
       image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=500&h=500&fit=crop",
-      description: "Decorate your laptop with developer humor",
+      description: "Spread the vibe energy everywhere",
       category: "Stickers"
     }
   ];
@@ -68,11 +68,11 @@ const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              All Products
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              All Vibe Gear
             </span>
           </h2>
-          <p className="text-gray-400 text-lg">Level up your developer wardrobe</p>
+          <p className="text-gray-400 text-lg">Complete your vibe coder wardrobe</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -101,7 +101,7 @@ const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
                     <span className="text-2xl font-bold text-cyan-400">${product.price}</span>
                     <Button 
                       onClick={() => onAddToCart({ ...product, size: 'M' })}
-                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
+                      className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700"
                     >
                       <ShoppingBag className="w-4 h-4 mr-2" />
                       Add to Cart

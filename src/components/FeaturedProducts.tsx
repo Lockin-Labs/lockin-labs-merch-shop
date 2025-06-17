@@ -11,24 +11,24 @@ const FeaturedProducts = ({ onAddToCart }: FeaturedProductsProps) => {
   const featuredProducts = [
     {
       id: 1,
-      name: "Lock In Hoodie",
+      name: "Vibe Check Hoodie",
       price: 49.99,
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500&h=500&fit=crop",
-      description: "Premium comfort for endless coding sessions"
+      description: "Premium comfort for endless vibe coding sessions"
     },
     {
       id: 2,
-      name: "Debug Mode Tee",
+      name: "Flow State Tee",
       price: 24.99,
       image: "https://images.unsplash.com/photo-1583743814966-8936f37f8302?w=500&h=500&fit=crop",
-      description: "Classic fit with developer humor"
+      description: "Stay in the zone with maximum comfort"
     },
     {
       id: 3,
-      name: "Code & Coffee Mug",
+      name: "Tribe Energy Mug",
       price: 16.99,
       image: "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=500&h=500&fit=crop",
-      description: "Fuel your coding sessions"
+      description: "Fuel your vibe coding adventures"
     }
   ];
 
@@ -41,11 +41,11 @@ const FeaturedProducts = ({ onAddToCart }: FeaturedProductsProps) => {
       <div className="container mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
-            <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-              Featured Gear
+            <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
+              Vibe Essentials
             </span>
           </h2>
-          <p className="text-gray-400 text-lg">Essential items for the focused developer</p>
+          <p className="text-gray-400 text-lg">Essential gear for the vibe tribe family</p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -69,7 +69,7 @@ const FeaturedProducts = ({ onAddToCart }: FeaturedProductsProps) => {
                     <span className="text-2xl font-bold text-cyan-400">${product.price}</span>
                     <Button 
                       onClick={() => handleAddToCart(product)}
-                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700"
+                      className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700"
                     >
                       <ShoppingBag className="w-4 h-4 mr-2" />
                       Add to Cart
