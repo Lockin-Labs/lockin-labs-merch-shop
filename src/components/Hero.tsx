@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 
 const Hero = () => {
@@ -22,8 +21,11 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 text-white px-8 py-3 text-lg"
+              asChild
             >
-              Shop Lockin-Labs Gear
+              <a href="https://lockin-labs.printify.me/" target="_blank" rel="noopener noreferrer">
+                Shop Lockin-Labs Gear
+              </a>
             </Button>
             <Button 
               variant="outline" 
