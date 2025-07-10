@@ -10,7 +10,7 @@ const Hero = () => {
               Vibe Tribe
             </span>
             <br />
-            <span className="text-white">Code Your Style</span>
+            <span className="text-white">Engineer Your Style Context</span>
           </h1>
           
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
