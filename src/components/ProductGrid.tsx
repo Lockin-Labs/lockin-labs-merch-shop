@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShoppingBag } from 'lucide-react';
 import ProductModal from './ProductModal';
+import { usePrintifyProducts } from '@/hooks/usePrintifyProducts';
 
 interface ProductGridProps {
   onAddToCart: (product: any) => void;
@@ -11,8 +12,10 @@ interface ProductGridProps {
 
 const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
   const [selectedProduct, setSelectedProduct] = useState(null);
+  const { products, loading } = usePrintifyProducts();
 
-  const products = [
+  const allProducts = [
+    ...products,
     {
       id: 4,
       name: "Vibe or Die Hoodie",
@@ -76,13 +79,13 @@ const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {products.map((product) => (
+          {allProducts.map((product) => (
             <Card key={product.id} className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all duration-300 group cursor-pointer">
               <CardContent className="p-0">
                 <div className="relative overflow-hidden" onClick={() => setSelectedProduct(product)}>
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
+                   <img 
+                     src={(product as any).image_url || (product as any).image} 
+                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />

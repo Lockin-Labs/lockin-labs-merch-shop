@@ -2,13 +2,16 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ShoppingBag } from 'lucide-react';
+import { usePrintifyProducts } from '@/hooks/usePrintifyProducts';
 
 interface FeaturedProductsProps {
   onAddToCart: (product: any) => void;
 }
 
 const FeaturedProducts = ({ onAddToCart }: FeaturedProductsProps) => {
+  const { products } = usePrintifyProducts();
   const featuredProducts = [
+    ...products.filter(p => p.featured),
     {
       id: 1,
       name: "Vibe Check Hoodie",
@@ -53,9 +56,9 @@ const FeaturedProducts = ({ onAddToCart }: FeaturedProductsProps) => {
             <Card key={product.id} className="bg-gray-900/50 border-gray-800 hover:border-cyan-500/50 transition-all duration-300 group">
               <CardContent className="p-0">
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={product.image} 
-                    alt={product.name}
+                   <img 
+                     src={(product as any).image_url || (product as any).image} 
+                     alt={product.name}
                     className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
