@@ -27,10 +27,19 @@ export const usePrintifyProducts = () => {
         setLoading(true);
         setError(null);
 
-        // For now, use sample products (matching your Printify store)
-        // TODO: After running the SQL migration, uncomment the database integration
-        setProducts(getSampleProducts());
-        setLoading(false);
+        // Try to fetch from Supabase Edge Function first
+        const { data, error } = await supabase.functions.invoke('fetch-printify-products');
+        
+        if (error) {
+          console.warn('Failed to fetch from Printify API:', error);
+          // Use sample products as fallback
+          setProducts(getSampleProducts());
+        } else if (data && data.products) {
+          setProducts(data.products);
+        } else {
+          // Use sample products as fallback
+          setProducts(getSampleProducts());
+        }
 
       } catch (err) {
         console.error('Error fetching products:', err);
