@@ -72,10 +72,10 @@ const ProductGrid = ({ onAddToCart }: ProductGridProps) => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              All Vibe Gear
+              Vibe Graphics
             </span>
           </h2>
-          <p className="text-gray-400 text-lg">Complete your vibe coder wardrobe</p>
+          <p className="text-gray-400 text-lg">Express your coding personality with visual designs</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">

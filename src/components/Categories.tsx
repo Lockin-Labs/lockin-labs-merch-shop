@@ -5,28 +5,22 @@ import { Shirt, ShoppingBag, Tags } from 'lucide-react';
 const Categories = () => {
   const categories = [
     {
-      name: "Vibe Hoodies",
+      name: "Developer Hoodies",
       icon: Shirt,
       count: "12 items",
       image: "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=300&h=300&fit=crop"
     },
     {
-      name: "Flow State Tees",
+      name: "Code Tees",
       icon: Shirt,
       count: "18 items", 
       image: "https://images.unsplash.com/photo-1583743814966-8936f37f8302?w=300&h=300&fit=crop"
     },
     {
-      name: "Tribe Accessories",
+      name: "Tech Accessories",
       icon: ShoppingBag,
       count: "8 items",
       image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=300&fit=crop"
-    },
-    {
-      name: "Vibe Stickers",
-      icon: Tags,
-      count: "15 items",
-      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?w=300&h=300&fit=crop"
     }
   ];
 
@@ -36,10 +30,10 @@ const Categories = () => {
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4">
             <span className="bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-              Shop by Vibe
+              Engineering Accessories
             </span>
           </h2>
-          <p className="text-gray-400 text-lg">Find your perfect vibe tribe aesthetic</p>
+          <p className="text-gray-400 text-lg">Essential tools and gear for the modern developer</p>
         </div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
